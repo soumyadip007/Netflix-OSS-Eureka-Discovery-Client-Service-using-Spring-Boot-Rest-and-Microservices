@@ -15,7 +15,7 @@ public class Controller {
 	@Autowired
 	private RestTemplate restTemplate;
 	
-	 @RequestMapping("/")
+	 @RequestMapping("/test")
 	    public String Test() {
 		 	return "Hello";
 	    }
