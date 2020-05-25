@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 import com.eureka.enitity.UserRating;
 
 @RestController
-@RequestMapping("client")
+@RequestMapping("/client")
 public class Controller {
 
 	@Autowired
@@ -21,7 +21,7 @@ public class Controller {
 		 	return "Hello";
 	    }
 
-    @RequestMapping("/{userId}")
+    @RequestMapping("/user/{userId}")
     public UserRating getUserRating(@PathVariable("userId") String userId) {
 
         UserRating userRating = restTemplate.getForObject("http://ratings-data-service/ratingsdata/user/" + userId, UserRating.class);
