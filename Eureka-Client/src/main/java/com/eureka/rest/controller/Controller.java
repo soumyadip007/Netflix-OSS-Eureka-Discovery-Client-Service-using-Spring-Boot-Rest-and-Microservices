@@ -15,6 +15,10 @@ public class Controller {
 	@Autowired
 	private RestTemplate restTemplate;
 	
+	 @RequestMapping("/")
+	    public String Test() {
+		 	return "Hello";
+	    }
 
     @RequestMapping("/{userId}")
     public UserRating getUserRating(@PathVariable("userId") String userId) {
