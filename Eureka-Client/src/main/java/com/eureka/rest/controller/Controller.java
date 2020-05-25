@@ -26,6 +26,18 @@ public class Controller {
 
         UserRating userRating = restTemplate.getForObject("http://ratings-data-service/ratingsdata/user/" + userId, UserRating.class);
 
+        System.out.println(userRating.getUserId());
+
+        System.out.println(userRating.getUserId());
+
+        System.out.println(userRating.getUserId());
+
+        System.out.println(userRating.getUserId());
+
+        System.out.println(userRating.getUserId());
+
+        System.out.println(userRating.getUserId());
+       
         return userRating;
 
     }
