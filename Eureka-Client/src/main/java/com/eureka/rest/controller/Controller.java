@@ -5,10 +5,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.reactive.function.client.WebClient;
 
 import com.eureka.enitity.UserRating;
-import com.netflix.discovery.DiscoveryClient;
 
 @RestController
 @RequestMapping("client")
@@ -17,11 +15,6 @@ public class Controller {
 	@Autowired
 	private RestTemplate restTemplate;
 	
-	@Autowired
-	private WebClient.Builder WebClient;
-	
-	@Autowired
-	private DiscoveryClient discoveryClient;
 	
 	 @RequestMapping("/test")
 	    public String Test() {
